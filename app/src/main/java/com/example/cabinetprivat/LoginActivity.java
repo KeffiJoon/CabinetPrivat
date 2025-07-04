@@ -59,6 +59,12 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
         });
 
+        signInBtn.setOnClickListener(v -> {
+            startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
+        });
+
+
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
