@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577692737987",
+    "project_id": "cabinetprivat-e2ae2",
+    "storage_bucket": "cabinetprivat-e2ae2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577692737987:android:ac3a03ccd1849845d79d76",
+        "android_client_info": {
+          "package_name": "com.example.cabinetprivat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnIEEKJp6tH2n8EOTIOxPvWGAvjibF4wQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
