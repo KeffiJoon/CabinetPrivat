@@ -44,11 +44,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/ModifLinie">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
+                style="@style/MyOutlinedTextInputLayout"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:textColor="#000000"
@@ -61,12 +62,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Password"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/ModifLinie"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
+                style="@style/MyOutlinedTextInputLayout"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:textColor="#000000"
@@ -119,4 +121,5 @@
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
+
 

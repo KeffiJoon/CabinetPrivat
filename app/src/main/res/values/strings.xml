@@ -3,4 +3,15 @@
 
     <string name="navigation_drawer_open">Deschide navigarea</string>
     <string name="navigation_drawer_close">Închide navigarea</string>
+    <string-array name="blood_types_array">
+        <item>Necunoscută</item>
+        <item>0 I (Rh+)</item>
+        <item>0 I (Rh-)</item>
+        <item>A II (Rh+)</item>
+        <item>A II (Rh-)</item>
+        <item>B III (Rh+)</item>
+        <item>B III (Rh-)</item>
+        <item>AB IV (Rh+)</item>
+        <item>AB IV (Rh-)</item>
+    </string-array>
 </resources>

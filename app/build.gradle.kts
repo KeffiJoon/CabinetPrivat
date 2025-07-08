@@ -7,6 +7,7 @@ android {
     namespace = "com.example.cabinetprivat"
     compileSdk = 36
 
+
     defaultConfig {
         applicationId = "com.example.cabinetprivat"
         minSdk = 24
@@ -43,6 +44,7 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
