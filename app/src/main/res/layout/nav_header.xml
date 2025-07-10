@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="160dp"
-android:orientation="vertical"
-android:padding="16dp"
-android:gravity="bottom"
-android:background="@color/blue_primary">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2979FF"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="48dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-<TextView
-    android:id="@+id/header_username"
-    android:text="Bun venit!"
-    android:textSize="18sp"
-    android:textColor="@android:color/white"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageView_nav_header_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="Imagine Profil"
+        android:paddingTop="8dp"
+        app:srcCompat="@drawable/profilut2" />
+    <!-- Sau folosește o imagine specifică -->
 
+    <TextView
+        android:id="@+id/textView_nav_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Nume Pacient"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView_nav_header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email.pacient@exemplu.com" />
 </LinearLayout>
+
 
 

@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (role.equals("doctor")) {
                             startActivity(new Intent(LoginActivity.this, DoctorProfileActivity.class));
                         } else {
-                            startActivity(new Intent(LoginActivity.this, PatientProfileActivity.class));
+                            startActivity(new Intent(LoginActivity.this, HelloActivity.class));
                         }
                         finish();
                     })

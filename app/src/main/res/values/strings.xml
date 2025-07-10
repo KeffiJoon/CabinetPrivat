@@ -14,4 +14,16 @@
         <item>AB IV (Rh+)</item>
         <item>AB IV (Rh-)</item>
     </string-array>
+
+    <string-array name="grupe_sangvine">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
 </resources>

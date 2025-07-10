@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/splash_background_gradient">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageDoctor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_doctor"
+            android:contentDescription="Imagine Doctor"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CircularImageView"
+            app:strokeColor="@color/blue_primary"
+            app:strokeWidth="2dp"
+            android:padding="2dp"/>
+<TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:text="Dr. Emily Carter"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary_dark"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/textSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Cardiologist"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_secondary_dark"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/textExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="10 years"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@color/text_secondary_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐" android:textSize="16sp"
+                android:textColor="@color/rating_star_color" /> <TextView
+            android:id="@+id/textRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            tools:text="4.9"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

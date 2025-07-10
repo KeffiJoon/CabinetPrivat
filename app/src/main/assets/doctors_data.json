@@ -1,0 +1,108 @@
+[
+{
+  "doc1": {
+    "name": "Dr. Emily Carter",
+    "specialty": "Cardiologist",
+    "rating": 4.9,
+    "experience": "10 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  "doc2": {
+    "name": "Dr. James Wilson",
+    "specialty": "Dermatologist",
+    "rating": 4.8,
+    "experience": "8 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  "doc3": {
+    "name": "Dr. Sofia Martinez",
+    "specialty": "Pediatrician",
+    "rating": 4.85,
+    "experience": "12 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/65.jpg"
+  },
+  "doc4": {
+    "name": "Dr. David Kim",
+    "specialty": "Neurologist",
+    "rating": 4.7,
+    "experience": "15 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+  },
+  "doc5": {
+    "name": "Dr. Laura Chen",
+    "specialty": "General Practitioner",
+    "rating": 4.6,
+    "experience": "7 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/50.jpg"
+  },
+  "doc6": {
+    "name": "Dr. Marcus Brown",
+    "specialty": "Orthopedic Surgeon",
+    "rating": 4.95,
+    "experience": "18 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/40.jpg"
+  },
+  "doc7": {
+    "name": "Dr. Angela White",
+    "specialty": "Ophthalmologist",
+    "rating": 4.88,
+    "experience": "9 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/30.jpg"
+  },
+  "doc8": {
+    "name": "Dr. Robert Green",
+    "specialty": "Endocrinologist",
+    "rating": 4.65,
+    "experience": "11 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/20.jpg"
+  },
+  "doc9": {
+    "name": "Dr. Hannah Singh",
+    "specialty": "Gynecologist",
+    "rating": 4.9,
+    "experience": "13 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/12.jpg"
+  },
+  "doc10": {
+    "name": "Dr. Ethan Baker",
+    "specialty": "Oncologist",
+    "rating": 4.75,
+    "experience": "14 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/65.jpg"
+  },
+  "doc11": {
+    "name": "Dr. Grace Lee",
+    "specialty": "Psychiatrist",
+    "rating": 4.8,
+    "experience": "10 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/33.jpg"
+  },
+  "doc12": {
+    "name": "Dr. Michael Scott",
+    "specialty": "ENT Specialist",
+    "rating": 4.7,
+    "experience": "9 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/90.jpg"
+  },
+  "doc13": {
+    "name": "Dr. Isabella Rossi",
+    "specialty": "Rheumatologist",
+    "rating": 4.85,
+    "experience": "16 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/70.jpg"
+  },
+  "doc14": {
+    "name": "Dr. Daniel O’Connor",
+    "specialty": "Pulmonologist",
+    "rating": 4.68,
+    "experience": "12 years",
+    "imageUrl": "https://randomuser.me/api/portraits/men/73.jpg"
+  },
+  "doc15": {
+    "name": "Dr. Aisha Ahmed",
+    "specialty": "Nephrologist",
+    "rating": 4.92,
+    "experience": "10 years",
+    "imageUrl": "https://randomuser.me/api/portraits/women/41.jpg"
+  }
+}
