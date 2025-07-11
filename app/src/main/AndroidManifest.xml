@@ -28,6 +28,10 @@
         <activity android:name=".PatientProfileActivity" android:exported="true" />
         <activity android:name=".HelloActivity" android:exported="true" />
         <activity android:name=".HomeActivity" android:exported="true" />
+        <activity android:name=".AppointmentsActivity" android:exported="true" />
+
+
+
 
 
 

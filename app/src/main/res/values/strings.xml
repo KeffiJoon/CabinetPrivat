@@ -3,7 +3,11 @@
 
     <string name="navigation_drawer_open">Deschide navigarea</string>
     <string name="navigation_drawer_close">Închide navigarea</string>
-    <string-array name="blood_types_array">
+    <string name="field_required">Câmp obligatoriu</string>
+    <string name="selected_date_placeholder">Data selectată: %s</string>
+    <string name="no_date_selected">Nicio dată selectată</string>
+
+    <string-array name="blood_groups">
         <item>Necunoscută</item>
         <item>0 I (Rh+)</item>
         <item>0 I (Rh-)</item>

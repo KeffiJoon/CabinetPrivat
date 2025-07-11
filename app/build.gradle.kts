@@ -59,7 +59,8 @@ dependencies {
 
     // Gson (pentru parsarea JSON)
     implementation ("com.google.code.gson:gson:2.11.0")
-
+    implementation("com.airbnb.android:lottie:6.0.0")
+    implementation("androidx.cardview:cardview:1.0.0")
     // Glide (pentru încărcarea imaginilor de pe URL)
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.recyclerview)
@@ -68,7 +69,7 @@ dependencies {
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.google.android.material:material:1.12.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-
+    implementation("androidx.appcompat:appcompat:1.6.1")
     // RecyclerView și CardView
     implementation ("androidx.recyclerview:recyclerview:1.3.3")
     implementation ("androidx.cardview:cardview:1.0.0")
@@ -76,7 +77,7 @@ dependencies {
     // Glide pentru încărcarea imaginilor de pe URL
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
-
+    implementation("com.google.android.material:material:1.12.0")
     // Testare
     testImplementation ("junit:junit:4.13.2")
     androidTestImplementation ("androidx.test.ext:junit:1.1.5")

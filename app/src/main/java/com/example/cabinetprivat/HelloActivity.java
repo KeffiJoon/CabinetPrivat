@@ -1,6 +1,5 @@
 package com.example.cabinetprivat;
 
-import android.annotation.SuppressLint; // Această adnotare nu mai este necesară dacă ștergi onBackPressed()
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -11,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar; // Asigură-te că este androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -19,11 +18,14 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Objects; // Necesare pentru Objects.requireNonNull
+
 public class HelloActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
-    private Toolbar toolbar;
+    private Toolbar toolbar; // Declară corect Toolbar-ul
+    private TextView toolbarTitleTextView; // TextView-ul pentru titlul din Toolbar
 
     // Firebase Authentication
     private FirebaseAuth mAuth;
@@ -40,9 +42,17 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         // Inițializare Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
 
-        // Inițializare UI
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        // Inițializare UI - Corectarea aici
+        toolbar = findViewById(R.id.hello_toolbar); // Referința la Toolbar-ul din XML
+        setSupportActionBar(toolbar); // Setează Toolbar-ul ca ActionBar
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false); // Ascunde titlul implicit al ActionBar-ului
+
+        // Referința la TextView-ul din interiorul Toolbar-ului pentru titlu personalizat
+        toolbarTitleTextView = findViewById(R.id.toolbar_title);
+        if (toolbarTitleTextView != null) {
+            toolbarTitleTextView.setText("Hello"); // Setează titlul din string-uri
+        }
+
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -50,7 +60,7 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         // Configurare Navigation Drawer
         navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, // Asigură-te că folosești "toolbar" aici
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -76,8 +86,8 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser == null) {
             // Utilizatorul nu este logat, afișează date generice
-            navHeaderName.setText("Welcome!");
-            navHeaderEmail.setText("Not Logged In");
+            if (navHeaderName != null) navHeaderName.setText("Welcome!");
+            if (navHeaderEmail != null) navHeaderEmail.setText("Not Logged In");
             return;
         }
 
@@ -85,8 +95,8 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         String displayName = currentUser.getDisplayName();
         String email = currentUser.getEmail();
 
-        navHeaderName.setText(displayName != null && !displayName.isEmpty() ? displayName : "Guest User");
-        navHeaderEmail.setText(email != null && !email.isEmpty() ? email : "No Email");
+        if (navHeaderName != null) navHeaderName.setText(displayName != null && !displayName.isEmpty() ? displayName : "Hello!");
+        if (navHeaderEmail != null) navHeaderEmail.setText(email != null && !email.isEmpty() ? email : "No Email");
     }
 
     @Override
@@ -98,12 +108,15 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         if (id == R.id.nav_home) {
             Intent intent = new Intent(HelloActivity.this, HomeActivity.class);
             startActivity(intent);
+            finish(); // Opțional, poți închide activitatea curentă dacă nu vrei să o păstrezi în back stack
         } else if (id == R.id.nav_appointments) {
-            Intent intent = new Intent(this, AppointmentsActivity.class);
+            Intent intent = new Intent(HelloActivity.this, AppointmentsActivity.class);
             startActivity(intent);
+            finish(); // Opțional
         } else if (id == R.id.nav_profile) {
-            Intent intent = new Intent(this, PatientProfileActivity.class);
+            Intent intent = new Intent(HelloActivity.this, HelloActivity.class);
             startActivity(intent);
+            // Nu faci finish() aici, probabil vrei să te poți întoarce la HelloActivity de la profil
         } else if (id == R.id.nav_logout) {
             mAuth.signOut();
             Toast.makeText(this, "Logged out successfully.", Toast.LENGTH_SHORT).show();
@@ -116,7 +129,7 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         return true;
     }
 
-    // Am șters metoda onBackPressed() de aici.
-    // Comportamentul implicit al butonului de back va fi utilizat.
-}
+    // Metoda onBackPressed() este gestionată automat de Navigation Drawer cu ActionBarDrawerToggle.
+    // Nu este necesar să o suprascrii, decât dacă ai un comportament custom specific.
 
+    }
