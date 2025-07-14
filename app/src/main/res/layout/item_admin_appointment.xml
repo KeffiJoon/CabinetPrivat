@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/nav_unselected"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_admin_appointment_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary_dark"
+        tools:text="Utilizator: user@example.com"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/text_admin_appointment_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary_dark"
+        tools:text="Doctor: Dr. Popescu - Cardiologie"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/text_admin_appointment_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary_dark"
+        tools:text="Data &amp; Ora: 15/07/2025 la 10:30"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_admin_appointment_status_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="@color/blue_primary"
+        tools:text="Status: Pending"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifică Status:"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary_dark"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_admin_appointment_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/nav_unselected"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_admin_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mesaj pentru utilizator (opțional)"
+        android:minLines="2"
+        android:maxLines="4"
+        android:gravity="top"
+        android:padding="8dp"
+        android:background="@color/nav_unselected"
+        android:textColor="@color/text_primary_dark"
+        android:textColorHint="@color/text_secondary_dark"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/button_admin_save_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvează Modificările"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/blue_primary"
+        android:textColor="@android:color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_secondary_dark"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

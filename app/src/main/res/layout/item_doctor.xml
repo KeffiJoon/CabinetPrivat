@@ -77,11 +77,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="4dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="⭐" android:textSize="16sp"
-                android:textColor="@color/rating_star_color" /> <TextView
+                android:text="⭐"
+                android:textColor="@color/rating_star_color"
+                android:textSize="16sp" /> <TextView
             android:id="@+id/textRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -56,7 +56,7 @@ dependencies {
 
     // ConstraintLayout (pentru layout-uri flexibile)
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-
+    implementation("com.google.android.material:material:1.x.x")
     // Gson (pentru parsarea JSON)
     implementation ("com.google.code.gson:gson:2.11.0")
     implementation("com.airbnb.android:lottie:6.0.0")
@@ -65,6 +65,10 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.recyclerview)
     // Dependențe de bază Android
+
+    implementation("com.google.firebase:firebase-auth:22.x.x")
+
+    implementation("com.google.firebase:firebase-firestore:24.x.x")
     implementation ("androidx.core:core-ktx:1.13.1")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.google.android.material:material:1.12.0")

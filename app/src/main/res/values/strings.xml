@@ -7,6 +7,34 @@
     <string name="selected_date_placeholder">Data selectată: %s</string>
     <string name="no_date_selected">Nicio dată selectată</string>
 
+
+    <string name="selected_time_placeholder">Ora selectată: %s</string>
+    <string name="no_time_selected">Nicio oră selectată</string>
+
+
+        <string name="profile_appointments_title">Profile Appointments</string>
+        <string name="user_profile_title">User Profile Details</string>
+        <string name="my_appointments_title">My Future Appointments</string>
+        <string name="no_appointments_message">You have no future appointments scheduled.\nBook one now!</string>
+
+        <string name="nav_home">Home</string>
+        <string name="nav_appointments">Appointments</string>
+        <string name="nav_profile">Profile</string>
+        <string name="nav_logout">Logout</string>
+
+
+
+
+    <string name="profile_name_placeholder">Nume: %s</string>
+    <string name="profile_email_placeholder">Email: %s</string>
+    <string name="profile_uid_placeholder">ID Utilizator: %s</string>
+    <string name="profile_creation_date_placeholder">Cont creat la: %s</string>
+
+    <string name="appointment_status_pending">În așteptare</string>
+    <string name="appointment_status_confirmed">Confirmată</string>
+    <string name="appointment_status_rejected">Refuzată</string>
+    <string name="appointment_status_unknown">Necunoscut</string>
+
     <string-array name="blood_groups">
         <item>Necunoscută</item>
         <item>0 I (Rh+)</item>

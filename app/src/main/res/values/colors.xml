@@ -21,5 +21,8 @@
     <color name="text_primary_dark">#212121</color>
     <color name="text_secondary_dark">#757575</color>
     <color name="rating_star_color">#FFD600</color>
+    <color name="status_confirmed">@android:color/holo_green_dark</color>
+    <color name="status_rejected">@android:color/holo_red_dark</color>
+    <color name="status_pending">@android:color/darker_gray</color>
 
 </resources>

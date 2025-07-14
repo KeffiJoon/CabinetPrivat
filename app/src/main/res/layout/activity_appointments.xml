@@ -13,31 +13,33 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/poza"> <androidx.appcompat.widget.Toolbar
-        android:id="@+id/appointments_toolbar"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/transparent"
-        android:elevation="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@drawable/poza">
 
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Appoinments"
-            android:textColor="@color/blue_primary"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_gravity="center" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appointments_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appoinments"
+                android:textColor="@color/blue_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="16dp"
@@ -51,9 +53,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="select date"
+                android:text="Selectează data"
                 android:textColor="@color/text_primary_dark"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -61,36 +63,68 @@
             <CalendarView
                 android:id="@+id/calendarView_appointment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/calendar_background" android:focusedMonthDateColor="@color/text_primary_dark"
-                android:weekSeparatorLineColor="@android:color/transparent" />
+                android:layout_height="310dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/calendar_background"
+                android:focusedMonthDateColor="@color/text_primary_dark"
+                android:weekSeparatorLineColor="@android:color/transparent"/>
+
 
             <TextView
                 android:id="@+id/text_selected_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
-                android:text="@string/no_date_selected"
+                android:layout_marginBottom="16dp"
+                android:text="Nicio dată selectată"
                 android:textColor="@color/text_secondary_dark"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="select doctor"
+                android:text="Selectează ora"
                 android:textColor="@color/text_primary_dark"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/button_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alege ora"
+                android:backgroundTint="@color/blue_primary"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/text_selected_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nicio oră selectată"
+                android:textColor="@color/text_secondary_dark"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selectează doctorul"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
 
             <Spinner
                 android:id="@+id/spinner_doctor_selection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
+                android:padding="20dp"
                 android:background="@color/nav_unselected"
-                android:layout_marginBottom="49dp" />
+                android:layout_marginBottom="24dp" />
 
             <Button
                 android:id="@+id/button_confirm_appointment"
@@ -99,7 +133,7 @@
                 android:backgroundTint="@color/blue_primary"
                 android:enabled="true"
                 android:padding="16dp"
-                android:text="confirm appointment"
+                android:text="Confirmă programare"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
