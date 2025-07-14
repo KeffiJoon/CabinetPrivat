@@ -77,13 +77,15 @@
 
         <!-- Forgot password (optional) -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/forgotPasswordLink" android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot Password?"
             android:textColor="#2979FF"
             android:textSize="14sp"
             android:layout_marginTop="8dp"
-            android:layout_gravity="end" />
+            android:layout_gravity="end"
+            android:clickable="true"    android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
 
         <!-- Sign In Button -->
         <Button
