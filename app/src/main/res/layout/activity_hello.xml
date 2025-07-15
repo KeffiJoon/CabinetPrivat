@@ -70,14 +70,6 @@
                             android:textColor="@color/blue_primary"
                             android:layout_marginBottom="12dp"/>
 
-                        <TextView
-                            android:id="@+id/text_display_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Nume: "
-                            android:textSize="18sp"
-                            android:textColor="@color/text_primary_dark"
-                            android:layout_marginBottom="6dp"/>
 
                         <TextView
                             android:id="@+id/text_email"

@@ -87,7 +87,7 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         navHeaderName = headerView.findViewById(R.id.textView_nav_header_name);
         navHeaderEmail = headerView.findViewById(R.id.textView_nav_header_email);
 
-        textDisplayName = findViewById(R.id.text_display_name);
+
         textEmail = findViewById(R.id.text_email);
         textUid = findViewById(R.id.text_uid);
         textCreationDate = findViewById(R.id.text_creation_date);
