@@ -295,7 +295,10 @@ public class HelloActivity extends AppCompatActivity implements NavigationView.O
         } else if (id == R.id.nav_appointments) {
             Intent intent = new Intent(this, AppointmentsActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_profile) {
+        }else if (id==R.id.nav_info) {
+            Intent intent = new Intent(HelloActivity.this, AboutUsActivity.class);
+        startActivity(intent);
+        }else if (id == R.id.nav_profile) {
             Toast.makeText(this, "You are already on the Profile page.", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_logout) {
             mAuth.signOut();

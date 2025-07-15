@@ -21,7 +21,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/text_primary_dark"
-        tools:text="Utilizator: user@example.com"
+        tools:text="User: user@example.com"
         android:layout_marginBottom="4dp"/>
 
     <TextView
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="@color/text_secondary_dark"
-        tools:text="Data &amp; Ora: 15/07/2025 la 10:30"
+        tools:text="Date &amp; Hour: 15/07/2025 la 10:30"
         android:layout_marginBottom="8dp"/>
 
     <TextView
@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Modifică Status:"
+        android:text="Change Status:"
         android:textSize="16sp"
         android:textColor="@color/text_primary_dark"
         android:layout_marginBottom="8dp"/>

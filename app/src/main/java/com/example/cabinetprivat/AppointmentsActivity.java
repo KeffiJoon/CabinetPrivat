@@ -365,7 +365,11 @@ public class AppointmentsActivity extends AppCompatActivity implements Navigatio
         } else if (id == R.id.nav_profile) {
             Intent intent = new Intent(this, HelloActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_logout) {
+        } else if (id==R.id.nav_info){
+            Intent intent=new Intent (AppointmentsActivity.this,AboutUsActivity.class);
+        startActivity(intent);
+        }
+        else if (id == R.id.nav_logout) {
             mAuth.signOut();
             Toast.makeText(this, "Logged out successfully.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, OnboardingActivity.class);

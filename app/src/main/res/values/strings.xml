@@ -6,7 +6,23 @@
     <string name="field_required">Câmp obligatoriu</string>
     <string name="selected_date_placeholder">Data selectată: %s</string>
     <string name="no_date_selected">Nicio dată selectată</string>
-
+    //locatie
+    <string name="about_us_title">About Us</string>
+    <string name="our_location">Our Location</string>
+    <string name="clinic_address_full">Brailei Street No. 10, Galati, Romania, Postal Code 123456</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions (FAQ)</string>
+    <string name="faq_q1">What medical services do you offer?</string>
+    <string name="faq_a1">We offer a wide range of medical services, including general consultations, specialties (cardiology, dermatology, pediatrics, etc.) and medical tests.</string>
+    <string name="faq_q2">How can I make an appointment?</string>
+    <string name="faq_a2">You can make an appointment directly from the app, by selecting the desired date and time, or you can contact us by phone.</string>
+    <string name="faq_q3">Do you accept medical insurance?</string>
+    <string name="faq_a3">We collaborate with various insurance companies. Please contact us to check your insurance compatibility.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="phone_number">+40712345678</string>
+    <string name="email_address">contact@cabinetprivat.ro</string>
+    <string name="call_us">Call Us</string>
+    <string name="email_us">Email Us</string>
 
     <string name="selected_time_placeholder">Ora selectată: %s</string>
     <string name="no_time_selected">Nicio oră selectată</string>

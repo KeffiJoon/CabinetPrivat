@@ -65,7 +65,7 @@ public class AdminActivity extends AppCompatActivity implements NavigationView.O
 
         TextView toolbarTitle = findViewById(R.id.admin_toolbar_title);
         if (toolbarTitle != null) {
-            toolbarTitle.setText("Panou de Administrare");
+            toolbarTitle.setText("Admin Panel");
         }
 
         drawerLayout = findViewById(R.id.drawer_layout_admin);

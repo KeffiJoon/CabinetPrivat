@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cabinetprivat">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +21,10 @@
         android:roundIcon="@mipmap/ic_logo_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.CabinetPrivat">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQp2ZTGbG_Ozy2SFoFBQFQjNic19Y_1Es" />
 
         <activity android:name=".SplashActivity"
             android:exported="true">
@@ -31,6 +44,8 @@
         <activity android:name=".AppointmentsActivity" android:exported="true" />
         <activity android:name=".AdminActivity" android:exported="true" />
         <activity android:name=".ForgotPasswordActivity" android:exported="true" />
+        <activity android:name=".AboutUsActivity" android:exported="true" />
+
 
 
 

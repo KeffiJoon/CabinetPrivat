@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/poza"> <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/alt_bkg"> <androidx.appcompat.widget.Toolbar
         android:id="@+id/admin_toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Toate Programările"
+                android:text="Appointments"
                 android:textColor="@color/text_primary_dark"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -58,7 +58,8 @@
                 android:id="@+id/recycler_view_admin_appointments"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/item_admin_appointment"/>
+                tools:listitem="@layout/item_admin_appointment"
+                android:scrollbars="vertical"/>
 
         </LinearLayout>
 

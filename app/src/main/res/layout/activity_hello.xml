@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/poza"> <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/bkgg"> <androidx.appcompat.widget.Toolbar
         android:id="@+id/hello_toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
@@ -120,13 +120,13 @@
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/lottie_no_appointments"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
-                    app:lottie_fileName="no_appointments_animation.json"
+                    app:lottie_fileName="checklist.json"
                     android:visibility="gone" />
 
                 <TextView
